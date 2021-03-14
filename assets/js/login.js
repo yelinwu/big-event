@@ -45,7 +45,7 @@ $(function () {
 
         //获取表单中的数据，serialize是根据表单各项的name属性获取值的，所以要检查表单各项的name属性
         let data = $(this).serialize();
-        axios.post('http://ajax.frontend.itheima.net/api/reguser', data).then(function (res) {
+        axios.post('/api/reguser', data).then(function (res) {
             console.log(res)
 
             if (res.data.status !== 0) {
@@ -60,7 +60,7 @@ $(function () {
         e.preventDefault()
 
         let data = $(this).serialize();//获取表单
-        axios.post('http://ajax.frontend.itheima.net/api/login', data)
+        axios.post('/api/login', data)
             .then(function (res) {
                 if (res.data.status !== 0) {
                     return layer.msg(res.data.message)
