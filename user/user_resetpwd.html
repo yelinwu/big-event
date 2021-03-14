@@ -21,22 +21,24 @@
         <div class="layui-form-item">
           <label class="layui-form-label">原密码</label>
           <div class="layui-input-block">
-            <input type="password" name="oldPwd" required placeholder="请输入原密码" autocomplete="off" class="layui-input" />
+            <input type="password" name="oldPwd" required lay-verify="required|pass" placeholder="请输入原密码"
+              autocomplete="off" class="layui-input" />
           </div>
         </div>
         <!-- 新密码 -->
         <div class="layui-form-item">
           <label class="layui-form-label">新密码</label>
           <div class="layui-input-block">
-            <input type="password" name="newPwd" required placeholder="请输入新密码" autocomplete="off" class="layui-input" />
+            <input type="password" name="newPwd" required lay-verify="required|pass|samePass" placeholder="请输入新密码"
+              autocomplete="off" class="layui-input" />
           </div>
         </div>
         <!-- 确认新密码 -->
         <div class="layui-form-item">
           <label class="layui-form-label">确认新密码</label>
           <div class="layui-input-block">
-            <input type="password" name="newPwd2" required placeholder="请确认新密码" autocomplete="off"
-              class="layui-input" />
+            <input type="password" name="newPwd2" required lay-verify="required|pass|rePass" placeholder="请确认新密码"
+              autocomplete="off" class="layui-input" />
           </div>
         </div>
         <!-- 操作按钮 -->
@@ -53,6 +55,7 @@
   <script src="../assets/lib/layui/layui.all.js"></script>
   <script src="../assets/lib/jquery.js"></script>
   <script src="../assets/lib/axios.min.js"></script>
+  <script src="../assets/js/ajaxBase.js"></script>
   <script src="../assets/js/user/user_resetpwd.js"></script>
 </body>
 

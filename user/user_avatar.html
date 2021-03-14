@@ -21,7 +21,7 @@
         <!-- 裁剪区域 -->
         <!-- Wrap the image or canvas element with a block element (container) -->
         <div class="cropper-box">
-          <img id="image" src="../../assets/images/sample.jpg" />
+          <img id="image" src="../assets/images/sample.jpg" />
         </div>
 
         <!-- 预览区域 -->
@@ -43,7 +43,8 @@
 
   <!-- 文件选择框 -->
   <!-- 通过 accept 属性控制选择的文件类型 -->
-  <input type="file" id="file" style="display: none;" accept="image/jpeg,image/png,image/bmp,image/gif" />
+  <input type="file" style="display:none;" id="file" style="display: none;"
+    accept="image/jpeg,image/png,image/bmp,image/gif" />
 
   <script src="../assets/lib/layui/layui.all.js"></script>
   <script src="../assets/lib/jquery.js"></script>
@@ -54,6 +55,7 @@
   <script src="../assets/lib/cropper/jquery-cropper.js"></script>
 
   <!-- 自己的js文件 -->
+  <script src="../assets/js/ajaxBase.js"></script>
   <script src="../assets/js/user/user_avatar.js"></script>
 </body>
 

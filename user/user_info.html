@@ -18,26 +18,28 @@
     <!-- 卡片主体区域 -->
     <div class="layui-card-body">
       <!-- 表单区域 -->
-      <form id="form" class="layui-form" action="">
+      <form id="form" class="layui-form" lay-filter="form" action="">
         <!-- 登录名称 -->
         <div class="layui-form-item">
           <label class="layui-form-label">登录名称</label>
           <div class="layui-input-block">
-            <input type="text" name="username" required placeholder="请输入登录名称" autocomplete="off" class="layui-input" />
+            <input type="text" name="username" readonly placeholder="请输入登录名称" autocomplete="off" class="layui-input" />
           </div>
         </div>
         <!-- 用户昵称 -->
         <div class="layui-form-item">
           <label class="layui-form-label">用户昵称</label>
           <div class="layui-input-block">
-            <input type="text" name="nickname" required placeholder="请输入用户昵称" autocomplete="off" class="layui-input" />
+            <input type="text" name="nickname" lay-verify="required|len" required placeholder="请输入用户昵称"
+              autocomplete="off" class="layui-input" />
           </div>
         </div>
         <!-- 用户邮箱 -->
         <div class="layui-form-item">
           <label class="layui-form-label">用户邮箱</label>
           <div class="layui-input-block">
-            <input type="text" name="email" required placeholder="请输入用户邮箱" autocomplete="off" class="layui-input" />
+            <input type="text" name="email" lay-verify="required|email" required placeholder="请输入用户邮箱"
+              autocomplete="off" class="layui-input" />
           </div>
         </div>
         <!-- 底部按钮 -->
@@ -56,6 +58,7 @@
   <script src="../assets/lib/layui/layui.all.js"></script>
   <script src="../assets/lib/jquery.js"></script>
   <script src="../assets/lib/axios.min.js"></script>
+  <script src="../assets/js/ajaxBase.js"></script>
   <script src="../assets/js/user/user_info.js"></script>
 </body>
 

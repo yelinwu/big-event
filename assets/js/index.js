@@ -1,4 +1,5 @@
-function getInfo() {
+getUserInfo()
+function getUserInfo() {
     //发送ajax请求获取用户信息，渲染名字、头像
     axios.get('/my/userinfo', {
         //请求头信息，这个请求头的配置一定要有，否则无法获取到用户信息
@@ -11,7 +12,7 @@ function getInfo() {
         console.log(res)
         //获取用户信息
         let info = res.data.data
-        console.log(info)
+        // console.log(info)
         //处理名字
         let name = info.nickname || info.username
         //设置名字
@@ -31,7 +32,6 @@ function getInfo() {
         }
     })
 }
-getInfo()
 
 $(function () {
     $('#btnLogout').click(function () {
