@@ -8,10 +8,10 @@ function getInfo() {
 
         } */
     }).then(function (res) {
-        console.log(res)
+        // console.log(res)
         //获取用户信息
         let info = res.data.data
-        console.log(info)
+        // console.log(info)
         //处理名字
         let name = info.nickname || info.username
         //设置名字

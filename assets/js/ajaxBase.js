@@ -13,7 +13,7 @@ axios.interceptors.request.use(function (config) {
         config.headers.Authorization = localStorage.getItem('token')
         // Authorization的值token， token的值是在登录的时候，存储到本地
     }
-    console.log('发送请求之前做的事', config)
+    // console.log('发送请求之前做的事', config)
     return config;
 }, function (error) {
     // 对请求错误做些什么
@@ -23,7 +23,7 @@ axios.interceptors.request.use(function (config) {
 // 添加响应拦截器
 axios.interceptors.response.use(function (response) {
     // 对响应数据做点什么
-    console.log('数据响应回来', response)
+    // console.log('数据响应回来', response)
 
     if (response.data.status === 1 &&
         response.data.message === '身份认证失败！') {
