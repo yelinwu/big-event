@@ -17,7 +17,7 @@
     <div class="layui-card-header">写文章</div>
     <div class="layui-card-body">
       <!-- 表单区域 -->
-      <form class="layui-form">
+      <form class="layui-form" id="form">
         <!-- 文章标题 -->
         <div class="layui-form-item">
           <label class="layui-form-label">文章标题</label>
@@ -49,7 +49,7 @@
             <!-- 文件选择框 -->
             <input class="layui-hide" type="file" id="fileCover" accept="image/jpeg,image/png,image/gif,image/bmp" />
             <div class="cropper-box">
-              <img id="image" src="../../assets/images/sample2.jpg">
+              <img id="image" src="../assets/images/sample2.jpg">
             </div>
             <div class="right-box">
               <div class="img-preview"></div>
@@ -71,6 +71,7 @@
   <script src="../assets/lib/layui/layui.all.js"></script>
   <script src="../assets/lib/jquery.js"></script>
   <script src="../assets/lib/axios.min.js"></script>
+  <script src="../assets/js/ajaxBase.js"></script>
   <!-- 富文本编辑器 -->
   <script src="../assets/lib/tinymce/tinymce.min.js"></script>
   <script src="../assets/lib/tinymce/tinymce_setup.js"></script>

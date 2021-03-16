@@ -9,7 +9,7 @@ function getUserInfo() {
 
         } */
     }).then(function (res) {
-        console.log(res)
+        // console.log(res)
         //获取用户信息
         let info = res.data.data
         // console.log(info)
